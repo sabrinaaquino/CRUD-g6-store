@@ -1,3 +1,5 @@
+This is a CRUD application made with Java and Spring
+
 When downloading the code, it is necessary to add the *application.properties* in the indicated place according to the documentation
 
 application.properties model (must be adjusted according to the machine where it will be installed):
