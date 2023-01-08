@@ -1,6 +1,6 @@
-Ao baixar o código, é necessário adicionar o *application.properties* no local indicado de acordo com a documentação
+When downloading the code, it is necessary to add the *application.properties* in the indicated place according to the documentation
 
-Modelo de application.properties (deve ser ajustado de acordo como a máquina onde vai ser instalado):
+application.properties model (must be adjusted according to the machine where it will be installed):
 
 ```
 #spring.jpa.hibernate.ddl-auto=updatespring.datasource.url=jdbc:mysql://111.22.333.444:9999/g6shop
@@ -22,28 +22,28 @@ spring.servlet.multipart.max-file-size=10MB
 spring.servlet.multipart.max-request-size=10MB
 ```
 
-Comando para compilar e executar servidor em segundo plano:
+Command to compile and run a background server:
 mvn package & start java -jar target/dependency/webapp-runner.jar --port 5339 target/*.war
 
-Comando só para compilar:
+To compile only:
 mvn package
 
-Comando só para executar servidor em segundo plano:
+To run a background server only:
 start java -jar target/dependency/webapp-runner.jar --port 80 target/*.war
 
-## Relatório de cobertura de código:
+## Code coverage report:
 
-Somente na primeira vez:
+Only the first time:
 
 ```
 mvn clover:instrument
 mvn clover:clover
 ```
 
-Nas vezes subsequentes
+On the following times:
 
 ``mvn clover:clover``
 
-Documentação:
+Documentation:
 
 ``mvn javadoc:javadoc``
